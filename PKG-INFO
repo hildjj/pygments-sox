@@ -1,0 +1,60 @@
+Metadata-Version: 1.1
+Name: pygments-sox
+Version: 1.0
+Summary: Pygments lexer for SIP over XMPP
+Home-page: http://pypi.python.org/pypi/pygments-sox
+Author: Joe Hildebrand
+Author-email: joe-github@cursive.net
+License: BSD
+Description: ================
+        pygments-sox
+        ================
+        ----------------------------------
+        A Pygments lexer for SIP over XMPP
+        ----------------------------------
+        
+        Overview
+        ========
+        
+        This package provides a SoX protocol lexer for Pygments_.
+        The lexer is published as an entry point and, once installed, Pygments will
+        pick it up automatically.
+        
+        You can then use the ``sox``, ``sip``, and ``sdp`` language with Pygments::
+        
+            $ pygmentize -l sox my_protocol_dump.xml
+        
+        .. _Pygments: http://pygments.org/
+        
+        Installation
+        ============
+        
+        Use your favorite installer to install pygments-sox into the same
+        Python you have installed Pygments. For example::
+        
+            $ easy_install pygments-sox
+        
+        To verify the installation run::
+        
+            $ pygmentize -L lexer | grep -i sox
+            * sox:
+                SoX (filenames *.sox)
+        
+        
+        Changelog
+        =========
+                
+        1.0 - 2013-01-08
+        ----------------
+        
+        * Initial release.
+        
+Keywords: pygments sox xmpp sip sdp lexer
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
